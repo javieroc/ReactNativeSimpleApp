@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, FlatList } from 'react-native';
 import Layout from '../components/CategoryListLayout';
-import Suggestion from '../components/Suggestion';
+import Category from '../components/Category';
 import Empty from '../components/Empty';
 import Separator from '../components/HorizontalSeparator';
 
@@ -15,7 +15,7 @@ class CategoryList extends Component {
           data={this.props.list}
           ListEmptyComponent={() => <Empty text="There isn't items." />}
           ItemSeparatorComponent={() => <Separator />}
-          renderItem={({ item }) => <Suggestion {...item} />}
+          renderItem={({ item }) => <Category {...item} />}
         />
       </Layout>
     );
