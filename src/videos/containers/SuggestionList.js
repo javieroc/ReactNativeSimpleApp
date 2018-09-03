@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FlatList, Text } from 'react-native';
+import { FlatList } from 'react-native';
 import Layout from '../components/SuggestionListLayout';
 import Suggestion from '../components/Suggestion';
 import Empty from '../components/Empty';
